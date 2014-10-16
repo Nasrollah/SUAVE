@@ -546,7 +546,7 @@ def define_vehicle(Mguess,Ereq, Preq, max_alt,wing_sweep,alpha_rc, alpha_tc, veh
     DuctedFan.eta_pe=.95         #electric efficiency of battery
     DuctedFan.engine_sizing_ductedfan(sizing_segment)   #calling the engine sizing method 
 
-    battery.initialize(Ereq, Preq)
+    battery.initialize_mass(Ereq, Preq)
     m_air=battery.find_mass_gain()    #find mass gain of battery throughout mission and size vehicle
     
     #now add the electric motor weight

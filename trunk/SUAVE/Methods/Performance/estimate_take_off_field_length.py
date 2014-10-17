@@ -103,7 +103,7 @@ def estimate_take_off_field_length(vehicle,config,airport):
     stall_speed = (2 * weight * sea_level_gravity / (rho * reference_area * maximum_lift_coefficient)) ** 0.5
     V2_speed    = V2_VS_ratio * stall_speed
     speed_for_thrust  = 0.70 * V2_speed
-    print 'weight_takeoff=', weight
+    
     # ==============================================
     # Determining vehicle number of engines
     # ==============================================

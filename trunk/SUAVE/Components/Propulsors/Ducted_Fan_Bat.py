@@ -65,7 +65,7 @@ class Ducted_Fan_Bat(Propulsor):
         
         self.engine_dia= 0.0
         self.engine_length= 0.0
-        self.nacelle_dia= 0.0
+        self.nacelle_diameter= 0.0
         self.inlet_length= 0.0
         self.eng_maxarea= 0.0
         self.inlet_area= 0.0   
@@ -401,7 +401,6 @@ class Ducted_Fan_Bat(Propulsor):
         #print mdot_core
     
     
-        #Component area sizing---------------------------------------------------
         
         #Component area sizing----------------------------------------------------
         
@@ -507,8 +506,8 @@ class Ducted_Fan_Bat(Propulsor):
         #Turbofan.mdf=mdfD
         #Turbofan.mdlc=mdlcD
         self.D=numpy.sqrt(A2/(numpy.pi/4))
-    
-      
+        self.nacelle_diameter=self.D*1.03 #assume nacelle diameter is 3% larger than inlet diameter
+        self.engine_length=self.nacelle_diameter  #use basic correlations to create a "decent"-looking fan
       
         #Turbofan.sfc=sfc
         #Turbofan.thrust=th  

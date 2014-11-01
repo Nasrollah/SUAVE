@@ -497,6 +497,7 @@ class Base_Segment(Data):
                     #raise ValueError , 'condition "%s" must be type np.array' % k
                 # the copy
                 else:
+                  
                     B[k] = A[k][-1,:][None,:]
                 #: if type
             #: for each key,value

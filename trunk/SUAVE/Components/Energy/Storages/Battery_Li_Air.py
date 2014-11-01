@@ -32,7 +32,7 @@ class Battery_Li_Air(Energy_Component):
         self.specific_power=0.66*Units.kW/Units.kg      #convert to W/kg
         self.max_energy=0.
         self.max_power=0.
-        self.discharge=Datta.
+        #self.discharge=Datta.
     def initialize_mass(self, energy, power): 
         #initializes properties of battery based on specific energy and specific power            
         if self.specific_energy==0:

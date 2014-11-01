@@ -590,7 +590,7 @@ class TurboFanPASS(Propulsor):
         self.mdf=mdfD
         self.mdlc=mdlcD
         self.D=numpy.sqrt(A2/(numpy.pi/4))
-    
+        self.nacelle_diameter=self.D
       
 
         #Turbofan.sfc=sfc
